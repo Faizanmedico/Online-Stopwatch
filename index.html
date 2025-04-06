@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>Themed Countdown Timer</title>
+</head>
+<body>
+
+  <div class="top-bar">
+    <button id="themeToggle">🌙 Theme</button>
+  </div>
+
+  <div class="mode-switch">
+    <button id="timerMode">⏳ Timer</button>
+    <button id="stopwatchMode">⏱️ Stopwatch</button>
+  </div>
+
+  <div class="time-input" id="customInputGroup">
+    <input type="text" id="customTime" placeholder="mm:ss" />
+    <button onclick="setCustomTime()">Set</button>
+  </div>
+
+  <div class="circle-container">
+    <div class="circle"></div>
+    <div class="progress">
+      <div class="fill" id="progressFill"></div>
+    </div>
+    <div class="time-display" id="display">01:00</div>
+  </div>
+
+  <div class="controls">
+    <button id="startPause">▶️</button>
+    <button id="reset">🔄</button>
+  </div>
+
+  <!-- Beep Sound -->
+  <audio id="beepSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+  <script src="myScript.js"></script>
+
+</body>
+</html>
